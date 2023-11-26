@@ -49,12 +49,6 @@
               <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> Penjelasan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
-              </li>
               <li class="nav-item active">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
@@ -73,57 +67,47 @@
     </header>
     <!-- end header section -->
   </div>
+  <!-- ... (kode lainnya) ... -->
+  <style>
+    .container {
+      display: flex;
+      justify-content: spa;
+      align-items: center;
+      flex-wrap: wrap; /* Agar gambar yang lebih besar dapat membentuk dua baris */
+      max-width: 200px;
+      margin: 20px auto;
+    }
 
-  <!-- contact section -->
+    .image {
+      max-width: 50%;
+      width: 50%;
+      height: auto;
+      border-radius: 50px;
+      object-fit: cover;
+      margin: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
 
+    .image:hover {
+      transform: scale(1.2);
+    }
+  </style>
+  <!-- ... (kode lainnya) ... -->
+</head>
+
+<body class="sub_page">
+  <!-- ... (kode lainnya) ... -->
   <section class="contact_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5 col-lg-4 offset-md-1">
-          <div class="form_container">
-            <div class="heading_container">
-              <h2>
-                apkah anda Mengalami masalah ?
-                </h2>
-            <div class="btn-box">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScZf7G2d6rq4AeigsQM8Px-gTXftRjguTUzBIlWgBp_BMLwnQ/viewform">
-                YA 
-              </a>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <style>
-                /* Atur lebar container sesuai kebutuhan Anda */
-                .profil-container {
-                  display: flex;
-                  overflow: hidden;
-                }
-            
-                /* Atur ukuran gambar dan border-radius sesuai kebutuhan Anda */
-                .profil {
-                  width: 100px; /* Sesuaikan lebar sesuai keinginan Anda */
-                  height: 100px; /* Sesuaikan tinggi sesuai keinginan Anda */
-                  border-radius: 50%; /* Untuk membuat lingkaran, sesuaikan dengan setengah dari lebar atau tinggi */
-                  margin: 0 10px; /* Sesuaikan margin sesuai keinginan Anda */
-                }
-              </style>
-            </head>
-            <body>
-            
-            <div class="profil-container">
-              <div class="profil">
-                <img src="images/client.jpg" alt="Foto profil">
-              </div>
-              <div class="profil">
-                <img src="images/client.jpg" alt="Foto profil">
-              </div>
-              <div class="profil">
-                <img src="images/client.jpg" alt="Foto profil">
-              </div>
-            </div>
+    <div class="container">
+      <img src="images/A1.jpg" alt="Gambar 1" class="image">
+      <img src="images/client.jpg" alt="Gambar 2" class="image">
+      <img src="images/client.jpg" alt="Gambar 3" class="image">
+      <img src="images/client.jpg" alt="gambar 4" class="image">
+    </div>
   </section>
+  <!-- ... (kode lainnya) ... -->
 
   <!-- end contact section -->
-
   <div class="footer_container">
     <!-- info section -->
 
