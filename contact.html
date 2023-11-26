@@ -71,27 +71,36 @@
   <style>
     .container {
       display: flex;
-      justify-content: spa;
+      justify-content: space-around; /* Mengubah spa menjadi space-around untuk jarak yang lebih merata */
       align-items: center;
-      flex-wrap: wrap; /* Agar gambar yang lebih besar dapat membentuk dua baris */
-      max-width: 200px;
-      margin: 20px auto;
+      flex-wrap: wrap;
+      margin: 25px auto;
     }
-
+  
+    .image-container {
+      flex-basis: 30%; /* Sesuaikan dengan kebutuhan Anda */
+      max-width: 200px;
+      text-align: center; /* Menyamakan teks di tengah gambar */
+      margin: 10px;
+    }
+  
     .image {
-      max-width: 50%;
-      width: 50%;
+      width: 100%; /* Gunakan lebar 100% untuk mengisi ruang di dalam image-container */
       height: auto;
       border-radius: 50px;
       object-fit: cover;
-      margin: 10px;
       transition: transform 0.3s ease-in-out;
     }
-
+  
+    .caption {
+      margin-top: 10px; /* Tambahkan jarak antara gambar dan caption */
+    }
+  
     .image:hover {
       transform: scale(1.2);
     }
   </style>
+  
   <!-- ... (kode lainnya) ... -->
 </head>
 
@@ -99,10 +108,36 @@
   <!-- ... (kode lainnya) ... -->
   <section class="contact_section layout_padding">
     <div class="container">
-      <img src="images/A1.jpg" alt="Gambar 1" class="image">
-      <img src="images/client.jpg" alt="Gambar 2" class="image">
-      <img src="images/client.jpg" alt="Gambar 3" class="image">
-      <img src="images/client.jpg" alt="gambar 4" class="image">
+      <div class="image-container">
+        <a href="https://www.instagram.com/rufinamariaa_/">
+          <img src="images/w4.jpg" alt="Gambar 1" class="image">
+          <div class="caption">RUFINA MENGKEY</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="https://www.instagram.com/mesiacrsty/">
+          <img src="images/W1.jpg" alt="Gambar 2" class="image">
+          <div class="caption">MESIA ROBOT</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="https://w2.instagram.com/i.am_kkez/">
+          <img src="images/W2.jpg" alt="Gambar 3" class="image">
+          <div class="caption">MARISKA KOTAMBUAN</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="link_gambar_4.html">
+          <img src="images/w3.jpg" alt="Gambar 4" class="image">
+          <div class="caption">CEASILIA SAROINSONG</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="http://www.tiktok.com/@albbys_">
+          <img src="images/vall.jpg" alt="Gambar 5" class="image">
+          <div class="caption">ALDO HENDRA</div>
+        </a>
+      </div>
     </div>
   </section>
   <!-- ... (kode lainnya) ... -->
@@ -127,14 +162,16 @@
                   <br>
                   <a href="https://www.instagram.com/i.am_kkez/">MARISKA KOTAMBUAN</a>
                   <br>
-                  <a href="https://www.instagram.com/ceasilia_/">CEASILIA SAROINSONG</a>
+                  <a href="MARISKA KOTAMBUAN">CEASILIA SAROINSONG</a>
                   <br>
                   <a href="http://www.tiktok.com/@albbys_">ALDO HENDRA</a>
                 </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-2 mx-auto">
-            <div class="info_link_box">
+            <div class="info_li
+            
+            nk_box">
               <h4>
                 Links
               </h4>
@@ -142,11 +179,8 @@
                 <a class="" href="index.html">
                   Home
                 </a>
-                <a class="" href="about.html">
-                  Penjelasan
-                </a>
-                <a class="" href="service.html">
-                  Services
+                <a class="" href="video.html">
+                  Video
                 </a>
                 <a class="" href="contact.html">
                   Contact Us
@@ -160,16 +194,10 @@
                 Address
               </h4>
               <div class="contact_link_box">
-                <a href="http://wa.me/081524254330">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>
-                    Call via whatsapp
-                  </span>
-                </a>
-                <a href="">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                   <span>
-                    kelompok4@gmail.com
+                    developmentwebst@gmail.com
                   </span>
                 </a>
               </div>
@@ -181,7 +209,7 @@
               <a href="https://twitter.com/GADA42161564">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="https://www.youtube.com/">
+              <a href="https://www.youtube.com/@sleepyal3991/featured">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
               </a>
               <a href="https://www.instagram.com/vall.lonelly/?next=%2F">
